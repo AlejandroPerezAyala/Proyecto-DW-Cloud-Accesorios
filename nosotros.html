@@ -4,65 +4,97 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Nosotros - Cloud Accesorios</title>
+	<!-- Linkeo de bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header class="header">
-		<nav>
-			<a href="index.html"><img src="img/Logo.svg" alt="logo de Cloud Accesorios" class="widthSvg"></a>
-			<ul>
-				
-				<li><a href="nosotros.html">Nosotros</a></li>
-				<li><a href="descuentos.html">Descuentos</a></li>
-				<li><a href="puntosDeEncuentro.html">Puntos de encuentro</a></li>
-				<li><a href="contactanos.html">Contactanos</a></li>
+	<!-- inicio de NAV -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-nav position-sticky">
+		<div class="container-fluid">
+		<a class="navbar-brand" href="index.html"><img src="img/Logo.svg" alt="logo" class="w-50"></a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+			<li class="nav-item navbar-brand mb-0 h1 fs-2">
+				<a class="nav-link" aria-current="page" href="nosotros.html">Nosotros</a>
+			</li>
+			<li class="nav-item navbar-brand mb-0 h1 fs-2">
+				<a class="nav-link" href="descuentos.html">Descuentos</a>
+			</li>
+			<li class="nav-item navbar-brand mb-0 h1 fs-2">
+				<a class="nav-link" href="puntosDeEncuentro.html">Puntos de encuentro</a>
+			</li>
+			<li class="nav-item navbar-brand mb-0 h1 fs-2">
+				<a class="nav-link" href="contactanos.html">Contactanos</a>
+			</li>
 			</ul>
-		</nav>
+		</div>
+		</div>
+	</nav>
+	<!--Fin de NAV  -->
 
-	
-		<img src="img/Header.jpeg" alt="imagen heroe" class="encabezado__img--fluid">
+	<header class="header">
+		<img src="img/Header.png" alt="imagen heroe" class="w-100">
 	</header>
 
 	<main class="description">
 		
-		<h1 class="textCenter principal__titulo--xxl">NOSOTROS</h1>
+		<h1 class="text-center fSize">NOSOTROS</h1>
 		
-		<Secction>
-			<article>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veritatis voluptates, non pariatur dignissimos eligendi, ab totam, eum incidunt odio itaque quaerat laborum minus reprehenderit repellat architecto iste iure quasi?. Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Cupiditate suscipit quae repellat enim hic, quasi voluptate dolore beatae ipsam soluta consequuntur. Deserunt molestiae molestias adipisci consequatur. Deleniti ipsa tenetur assumenda.</p>
-			</article>
+		<Secction >
+			<div class="border border-2 rounded border-secondary m-5 text-center ">
+				<article>
+					<p class="fs-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veritatis voluptates, non pariatur dignissimos eligendi, ab totam, eum incidunt odio itaque quaerat laborum minus reprehenderit repellat architecto iste iure quasi?. Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Cupiditate suscipit quae repellat enim hic, quasi voluptate dolore beatae ipsam soluta consequuntur. Deserunt molestiae molestias adipisci consequatur. Deleniti ipsa tenetur assumenda.</p>
+				</article>
+			</div>
 		</Secction>
 	</main>
 
-	<footer class="pie">
-		<div>
-			<h3>Seguinos!</h3>
-			<ul>
-				<li>
-					<a href="https://instagram.com" target="_blank">instagram</a>
-				</li>
-				<li>
-					<a href="https://facebook.com" target="_blank">facebook</a>
-				</li>
-			</ul>
-		</div>
-		<div>
-			<h3>Contactos!</h3>
-			<ul>
-				<li><a href="#">011-xxxxxxxx</a></li>
-				<li><a href="#">xxxxxx@xxxxx</a></li>
-			</ul>
-		</div>
-		<div>
-			<h3>Medios de pago!</h3>
-			<img src="img/visa@2x.png" alt="visa" class="iconSize">
-			<img src="img/mastercard@2x.png" alt="mastercard" class="iconSize" >
-			<img src="img/amex@2x.png" alt="american-express" class="iconSize">
+	<!-- inicio de footer -->
+	<footer class="bg-nav container-fluid">
+		<div class="row">
+			<div class="col-md-6 col-lg-4">
+				<h3 class="fs-1">Seguinos!</h3>
+				<ul>
+					<li>
+						<img src="img/instagram.svg" alt="Bootstrap" width="32" height="32">
+						<a href="https://instagram.com" target="_blank" class="linkModified text-decoration-none fs-3 text-dark">instagram</a>
+					</li>
+					<li>
+						<img src="img/facebook.svg" alt="Bootstrap" width="32" height="32">
+						<a href="https://facebook.com" target="_blank" class="linkModified text-decoration-none fs-3 text-dark">facebook</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-6 col-lg-4">
+				<h3 class="fs-1">Contactos!</h3>
+				<ul>
+					<li>
+						<img src="img/phone.svg" alt="Bootstrap" width="32" height="32">
+						<a href="#" class="linkModified text-decoration-none fs-3 text-dark">011-xxxxxxxx</a>
+					</li>
+					<li>
+						<img src="img/email.svg" alt="Bootstrap" width="32" height="32">
+						<a href="#" class="linkModified text-decoration-none fs-3 text-dark">xxxxxx@xxxxx</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-6 col-lg-4">
+				<h3 class="fs-1">Medios de pago!</h3>
+				<img src="img/visa@2x.png" alt="visa" class="iconSize">
+				<img src="img/mastercard@2x.png" alt="mastercard" class="iconSize" >
+				<img src="img/amex@2x.png" alt="american-express" class="iconSize">
+			</div>
 		</div>
 	</footer>
+	<!-- fin de footer -->
 	
 	
 </body>
 
-
+<!-- linkeo de JS -->
+<script src="js/bootstrap.min.js"></script>
 </html>

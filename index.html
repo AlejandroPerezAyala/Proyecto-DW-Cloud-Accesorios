@@ -4,91 +4,143 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Cloud Accesorios</title>
+	<!-- Linkeo de bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Linkeo de mi CSS -->
 	<link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
-<div class="container">
-	<nav id="nav">	
-		<a href="index.html"><img src="img/Logo.svg" alt="logo de Cloud Accesorios" class="widthSvg"></a>		
-		<div>
-			<ul>
-				
-				<li><a href="nosotros.html">Nosotros</a></li>
-				<li><a href="descuentos.html">Descuentos</a></li>
-				<li><a href="puntosDeEncuentro.html">Puntos de encuentro</a></li>
-				<li><a href="contactanos.html">Contactanos</a></li>
-							
-			</ul>
-		</div>
-	</nav>
-	<header class="header" id="header">
-		<img src="img/Header.jpeg" alt="imagen heroe" class="encabezado__img--fluid">
-	</header>
-
-	<main class="productos" id="productos">
-		<h1 class="textCenter principal__titulo--xxl" >CLOUD ACCESORIOS</h1>
-		<section>
-			<div>
-				<img src="img/imagen1.jpg" alt="Gif de pulceras" class="scale">
-			</div>
-			<div>
-				<img src="img/imagen2.jpg" alt="Gif de collares" class="scale">
-			</div>
-
-			<div>
-				<img src="img/imagen3.jpg" alt="Gif de anillos" class="scale">
-			</div>
-			<div>
-				<img src="img/imagen3.jpg" alt="Gif de anillos" class="scale">
-			</div>
-			<div>
-				<img src="img/imagen3.jpg" alt="Gif de anillos" class="scale">
-			</div>
-			<div>
-				<img src="img/imagen3.jpg" alt="Gif de anillos" class="scale">
-			</div>
-		</section>
-		
-			<div class="textCenter">
-				<a href="https://instagram.com" target="_blank" >
-					<img src="img/seguinos.png" alt="Seguinos en instagram" class="borderRadius">
-				</a>
-			</div>
- 		
-	</main>
-
-	<footer class="pie" id="footer">
-		<div>
-			<h3>Seguinos!</h3>
-			<ul>
-				<li>
-					<a href="https://instagram.com" target="_blank">instagram</a>
+	<div class="">
+		<!-- inicio de NAV -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-nav position-sticky">
+			<div class="container-fluid">
+			<a class="navbar-brand" href="index.html"><img src="img/Logo.svg" alt="logo" class="w-50"></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+				<li class="nav-item navbar-brand mb-0 h1 fs-2">
+					<a class="nav-link" aria-current="page" href="nosotros.html">Nosotros</a>
 				</li>
-				<li>
-					<a href="https://facebook.com" target="_blank">facebook</a>
+				<li class="nav-item navbar-brand mb-0 h1 fs-2">
+					<a class="nav-link" href="descuentos.html">Descuentos</a>
 				</li>
-			</ul>
+				<li class="nav-item navbar-brand mb-0 h1 fs-2">
+					<a class="nav-link" href="puntosDeEncuentro.html">Puntos de encuentro</a>
+				</li>
+				<li class="nav-item navbar-brand mb-0 h1 fs-2">
+					<a class="nav-link" href="contactanos.html">Contactanos</a>
+				</li>
+				</ul>
+			</div>
+			</div>
+		</nav>
+		<!--Fin de NAV  -->
+		<!-- inicio de header -->	
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="img/Header.png" class="d-block w-100" alt="header cloud accesorios">
+			</div>
+			<div class="carousel-item">
+				<img src="img/header2.png" class="d-block w-100" alt="header cloud accesorios">
+			</div>
+			<div class="carousel-item">
+				<img src="img/Header 3.png" class="d-block w-100" alt="header cloud accesorios">
+			</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+			</button>
 		</div>
-		<div>
-			<h3>Contactos!</h3>
-			<ul>
-				<li><a href="#">011-xxxxxxxx</a></li>
-				<li><a href="#">xxxxxx@xxxxx</a></li>
-			</ul>
-		</div>
-		<div>
-			<h3>Medios de pago!</h3>
-			<img src="img/visa@2x.png" alt="visa" class="iconSize">
-			<img src="img/mastercard@2x.png" alt="mastercard" class="iconSize" >
-			<img src="img/amex@2x.png" alt="american-express" class="iconSize">
-		</div>
+		<!-- inicio de Productos -->
+		<main class="container-fluid ">
+			<h1 class="text-center fSize">CLOUD ACCESORIOS</h1>
+			<section class="py-3 align-item-center">
+				<div class="row text-center"> 
+					<div class="col-md-6 col-lg-4 pb-lg-3">
+						<img src="img/imagen1.jpg" alt="Gif de pulceras" class="scale w-50">
+					</div>
+					<div class="col-md-6 col-lg-4 pb-lg-3">
+						<img src="img/imagen2.jpg" alt="Gif de collares" class="scale w-50">
+					</div>
 
+					<div class="col-md-6 col-lg-4 pb-lg-3">
+						<img src="img/imagen3.jpg" alt="Gif de anillos" class="scale w-50">
+					</div>
+					<div class="col-md-6 col-lg-4 pb-lg-3">
+						<img src="img/imagen3.jpg" alt="Gif de anillos" class="scale w-50">
+					</div>
+					<div class="col-md-6 col-lg-4 pb-lg-3">
+						<img src="img/imagen3.jpg" alt="Gif de anillos" class="scale w-50">
+					</div>
+					<div class="col-md-6 col-lg-4 pb-lg-3 ">
+						<img src="img/imagen3.jpg" alt="Gif de anillos" class="scale w-50">
+					</div>
+				</div>
+			</section>
 			
-
-	</footer>
-</div>	
+				<div class="text-center">
+					<a href="https://instagram.com" target="_blank" >
+						<img src="img/seguinos.png" alt="Seguinos en instagram" class="borderRadius">
+					</a>
+				</div>
+			
+		</main>
+		<!-- fin de Productos -->	
+		<!-- inicio de footer -->
+		<footer class="bg-nav container-fluid">
+			<div class="row">
+				<div class="col-md-6 col-lg-4">
+					<h3 class="fs-1">Seguinos!</h3>
+					<ul>
+						<li>
+							<img src="img/instagram.svg" alt="Bootstrap" width="32" height="32">
+							<a href="https://instagram.com" target="_blank" class="linkModified text-decoration-none fs-3 text-dark">instagram</a>
+						</li>
+						<li>
+							<img src="img/facebook.svg" alt="Bootstrap" width="32" height="32">
+							<a href="https://facebook.com" target="_blank" class="linkModified text-decoration-none fs-3 text-dark">facebook</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<h3 class="fs-1">Contactos!</h3>
+					<ul>
+						<li>
+							<img src="img/phone.svg" alt="Bootstrap" width="32" height="32">
+							<a href="#" class="linkModified text-decoration-none fs-3 text-dark">011-xxxxxxxx</a>
+						</li>
+						<li>
+							<img src="img/email.svg" alt="Bootstrap" width="32" height="32">
+							<a href="#" class="linkModified text-decoration-none fs-3 text-dark">xxxxxx@xxxxx</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<h3 class="fs-1">Medios de pago!</h3>
+					<img src="img/visa@2x.png" alt="visa" class="iconSize">
+					<img src="img/mastercard@2x.png" alt="mastercard" class="iconSize" >
+					<img src="img/amex@2x.png" alt="american-express" class="iconSize">
+				</div>
+			</div>
+		</footer>
+		<!-- fin de footer -->
+	</div>	
 </body>
 
-
+<!-- linkeo de JS -->
+<script src="js/bootstrap.min.js"></script>
 </html>
