@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+*{
+    font-family: $fontFamily;
+}
+
+html{
+    font-size: $fontHtml;
+}
+
+body{
+	background-image: url(../img/5778518.jpg);
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+p{
+	color:black;
+	line-height: 2.5rem;
+	font-size: 1.7rem;
+}
