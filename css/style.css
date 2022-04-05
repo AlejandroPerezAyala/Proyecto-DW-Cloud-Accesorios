@@ -7842,13 +7842,24 @@ p {
   width: 4rem;
   height: 2.5rem; }
 
-footer ul li {
-  list-style: none; }
+.pie section {
+  display: block;
+  padding: 1rem; }
+  .pie section ul {
+    list-style: none; }
+    .pie section ul li a:hover {
+      color: black;
+      font-weight: 700; }
+  @media screen and (min-width: 550px) {
+    .pie section {
+      display: flex;
+      justify-content: space-between;
+      align-items: top; } }
 
-.linkModified:hover {
-  color: black;
-  font-weight: 700; }
-
-.bg-nav {
+.bg-nav, .pie {
   background: #7b9cd1;
   background: linear-gradient(90deg, #7b9cd1 34%, rgba(236, 197, 234, 0.971026) 75%); }
+
+.sticky {
+  position: sticky;
+  top: 0; }

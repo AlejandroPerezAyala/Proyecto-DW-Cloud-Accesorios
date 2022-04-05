@@ -7,3 +7,22 @@ $fontH1: 4rem;
 //Colores
 $mainColor: rgb(123,156,209);
 $textColor: black;
+
+//mix-in
+
+@mixin breakpoint($breakpoint){
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)){
+        @content;
+    } 
+}
+
+//Maps
+
+$breakpoints:(
+    'sm': 550px,
+    'md': 764px,
+    'lg': 1024px
+)
+
+
+
