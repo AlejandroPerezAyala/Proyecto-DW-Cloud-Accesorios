@@ -7830,10 +7830,24 @@ p {
   margin: 0;
   padding: 0; }
 
+nav {
+  z-index: 2; }
+
+.sticky {
+  position: sticky;
+  top: 0; }
+
+.bg-nav, .pie {
+  background: #7b9cd1;
+  background: linear-gradient(90deg, #7b9cd1 34%, rgba(236, 197, 234, 0.971026) 75%); }
+
 .scale:hover {
   transform: scale(0.8);
   cursor: pointer;
   transition: 3s; }
+
+.border {
+  border-radius: 2rem; }
 
 .fSize {
   font-size: 4rem; }
@@ -7855,11 +7869,3 @@ p {
       display: flex;
       justify-content: space-between;
       align-items: top; } }
-
-.bg-nav, .pie {
-  background: #7b9cd1;
-  background: linear-gradient(90deg, #7b9cd1 34%, rgba(236, 197, 234, 0.971026) 75%); }
-
-.sticky {
-  position: sticky;
-  top: 0; }
