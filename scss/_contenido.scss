@@ -9,3 +9,12 @@
 .border{
     border-radius: 2rem;
 }
+
+.btn-propio{
+    background: #7b9cd1;
+    color: black;
+    &:hover{
+        transform: scale(1.08);
+        transition: 3s;
+    }
+}
