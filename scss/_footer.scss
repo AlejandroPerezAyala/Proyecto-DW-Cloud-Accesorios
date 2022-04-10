@@ -6,19 +6,32 @@
 	width:4rem;
 	height: 2.5rem;
 }
+
+.iconSize2{
+    width:2.5rem;
+    height: 1rem;
+    align-items: top;
+
+}
 .pie{
     @extend .bg-nav;
     section{
+        padding: 0;
         display: block;
         padding: 1rem;
         ul{
             list-style: none;
-            li a{
-                &:hover{
-                    color: $textColor;
-	                font-weight: 700;
-                }
+            padding-left: 0 !important;
+            li{
+                align-items: center !important;
             }
+                li a{
+                    text-decoration: none;
+                    &:hover{
+                        color: $textColor;
+                        font-weight: 700;
+                    }
+                }
         }
         @include breakpoint(sm){
         display: flex;

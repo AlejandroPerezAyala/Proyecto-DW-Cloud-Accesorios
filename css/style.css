@@ -7856,6 +7856,31 @@ nav {
     transform: scale(1.08);
     transition: 3s; }
 
+.slider {
+  animation-name: cambio;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 20s;
+  animation-delay: 0s; }
+
+@keyframes cambio {
+  0% {
+    margin-left: 0; }
+  20% {
+    margin-left: 0; }
+  25% {
+    margin-left: -100%; }
+  45% {
+    margin-left: -100%; }
+  50% {
+    margin-left: -200%; }
+  70% {
+    margin-left: -200%; }
+  75% {
+    margin-left: -300%; }
+  100% {
+    margin-left: -300%; } }
+
 .fSize {
   font-size: 4rem; }
 
@@ -7863,14 +7888,25 @@ nav {
   width: 4rem;
   height: 2.5rem; }
 
+.iconSize2 {
+  width: 2.5rem;
+  height: 1rem;
+  align-items: top; }
+
 .pie section {
+  padding: 0;
   display: block;
   padding: 1rem; }
   .pie section ul {
-    list-style: none; }
-    .pie section ul li a:hover {
-      color: black;
-      font-weight: 700; }
+    list-style: none;
+    padding-left: 0 !important; }
+    .pie section ul li {
+      align-items: center !important; }
+    .pie section ul li a {
+      text-decoration: none; }
+      .pie section ul li a:hover {
+        color: black;
+        font-weight: 700; }
   @media screen and (min-width: 550px) {
     .pie section {
       display: flex;
